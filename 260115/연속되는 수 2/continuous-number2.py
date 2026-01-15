@@ -15,8 +15,7 @@ for i in range(n):
         else:
             cur_max = 1
 
-
-
+cnt_max = max(cnt_max, cur_max)
 print(cnt_max)
 
         
