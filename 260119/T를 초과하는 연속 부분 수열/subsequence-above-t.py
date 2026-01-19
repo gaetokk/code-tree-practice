@@ -10,7 +10,7 @@ else:
 max_cnt = cur_cnt
 
 for i in range(1, n):
-    if arr[i] > arr[i-1] and cur_cnt > 0:
+    if arr[i] > arr[i-1] and arr[i-1] > t:
         cur_cnt += 1            
     elif arr[i] > t:
         cur_cnt = 1
