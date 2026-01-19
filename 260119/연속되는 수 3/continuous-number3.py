@@ -2,7 +2,7 @@ N = int(input())
 arr = [int(input()) for _ in range(N)]
 
 # Please write your code here.
-max_len = 0
+max_len = 1
 cur_len = 1
 
 for i in range(1, N):
