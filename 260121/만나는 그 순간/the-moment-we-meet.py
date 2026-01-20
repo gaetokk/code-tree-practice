@@ -38,13 +38,15 @@ for i in range(m):
         b_dir.append(b_loc)
 
 
+is_meet = False
 is_meet_index = -1
 
 for a, b in zip(a_dir, b_dir):
     is_meet_index += 1
     if a == b:
         print(is_meet_index + 1)
+        is_meet = True
         break
 
-if is_meet_index == len(a_dir):
+if is_meet == False:
     print(-1)
