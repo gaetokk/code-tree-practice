@@ -61,7 +61,7 @@ if b_len > a_len :
                 is_meet = True
         else:
             is_meet = False
-else:
+elif b_len < a_len :
     for i in range(b_len, a_len):
         if b_dir[b_len-1] == a_dir[i]:
             if is_meet == False:
