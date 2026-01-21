@@ -40,35 +40,25 @@ for i in range(m):
 
 
 meet_cnt = 0
-is_meet = False
 a_len = len(a_dir)
 b_len = len(b_dir)
 
-for i in range(min(a_len, b_len)):
+for i in range(1, min(a_len, b_len)):
     if a_dir[i] == b_dir[i]:
-        if is_meet == False:
+        if a_dir[i-1] != b_dir[i-1]:
             meet_cnt += 1
-            is_meet = True
-    else:
-        is_meet = False
-
 
 if b_len > a_len :
     for i in range(a_len, b_len):
         if b_dir[i] == a_dir[a_len-1]:
-            if is_meet == False:
+            if b_dir[i-1] != a_dir[a_len-1]:
                 meet_cnt += 1
-                is_meet = True
-        else:
-            is_meet = False
+
 elif b_len < a_len :
     for i in range(b_len, a_len):
         if b_dir[b_len-1] == a_dir[i]:
-            if is_meet == False:
+            if a_dir[i-1] != b_dir[a_len-1]:
                 meet_cnt += 1
-                is_meet = True
-        else:
-            is_meet = False
 
 
 print(meet_cnt)
