@@ -57,7 +57,7 @@ if b_len > a_len :
 elif b_len < a_len :
     for i in range(b_len, a_len):
         if b_dir[b_len-1] == a_dir[i]:
-            if a_dir[i-1] != b_dir[a_len-1]:
+            if b_dir[b_len-1] != a_dir[i-1]:
                 meet_cnt += 1
 
 
