@@ -6,7 +6,7 @@ is_sick = [0] * (N + 1)
 is_sick_2 = [0] * (N + 1)
 is_sick_2[P] = 1
 
-hs_cnt = [0] * 250
+hs_cnt = [0] * 1000
 
 for i in range(T):
     t, x, y = handshakes[i]
