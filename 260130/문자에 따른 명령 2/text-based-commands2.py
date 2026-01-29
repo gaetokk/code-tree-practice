@@ -37,6 +37,6 @@ for mov in dirs:
         dir_num = rotate_R(dir_num)
     elif mov == 'F':
         # move
-        nx, ny = x + dx[dir_num], y + dy[dir_num]
+        x, y = x + dx[dir_num], y + dy[dir_num]
 
-print(nx, ny)
+print(x, y)
