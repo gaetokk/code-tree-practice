@@ -3,10 +3,9 @@ arr = [[0] * m for _ in range(n)]
 
 # Please write your code here.
 answer = [
-    [0] * n
-    for _ in range(m)
+    [0] * m
+    for _ in range(n)
 ]
-
 
 def in_range(x, y):
     return 0 <= x and x < n and 0 <= y and y < m
