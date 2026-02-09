@@ -10,6 +10,8 @@ cnt = 0
 is_stop = 0
 
 for i in range(N):
+    if is_stop == 1:
+        break
     dir_i = dir[i]
     dist_i = dist[i]
 
@@ -24,9 +26,9 @@ for i in range(N):
         else:
             x, y = x + dx[3], y + dy[3]
         if x == 0 and y == 0:
-            print(cnt)
             is_stop = 1
-            pass
+            print(cnt)
+            break
             
 
 if is_stop == 0:
