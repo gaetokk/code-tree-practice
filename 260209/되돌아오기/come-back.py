@@ -7,6 +7,7 @@ dist = [int(move[1]) for move in moves]
 x, y = 0, 0
 dx, dy = [1, 0, -1, 0], [0, -1, 0, 1]
 cnt = 0
+is_stop = 0
 
 for i in range(N):
     dir_i = dir[i]
@@ -24,8 +25,9 @@ for i in range(N):
             x, y = x + dx[3], y + dy[3]
         if x == 0 and y == 0:
             print(cnt)
+            is_stop = 1
             pass
             
 
-if cnt == 0:
+if is_stop == 0:
     print(-1)
