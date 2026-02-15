@@ -2,7 +2,7 @@ n = int(input())
 A = list(map(int, input().split()))
 
 # Please write your code here.
-min_dist = 10000
+min_dist = 1000000
 for i in range(n):
     i_dist = 0
     for k in range(n):
